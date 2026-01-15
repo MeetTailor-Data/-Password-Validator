@@ -13,6 +13,7 @@ for ch in pwd:
         c = True
 
 if 8 < p < 15 and a and b and c:
-    print("Password is valid")
+    print("Congrates Password is valid")
 else:
-    print("Password is invalid! Need to Make More Strong Password")
+
+    print("Password is invalid,You Need to Make More Strong Password!")
