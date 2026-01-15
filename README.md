@@ -1,52 +1,45 @@
-# Password Validator (Python)
+# Password Validation Program (Python)
 
-This is a simple Python program that validates a user-entered password based on basic security rules.
-The project is designed using core Python concepts and is ideal for beginners who want to understand string handling and validation logic.
+A **Python-based password validation program** that checks whether a password meets basic strength requirements.
+This project is ideal for beginners to understand **string handling, loops, and conditional logic** in Python.
 
 ---
 
 ## Project Description
 
-The Password Validator checks whether a password is strong enough by validating its length and character composition.
-It ensures that the password contains:
+This program takes a password as input from the user and validates it based on predefined rules such as:
 
-* At least one uppercase letter
-* At least one lowercase letter
-* At least one digit
-* A valid length range
+* Password length
+* Presence of uppercase letters
+* Presence of lowercase letters
+* Presence of digits
 
-Based on these conditions, the program displays whether the password is valid or invalid.
-
----
-
-## Features
-
-* Accepts password input from the user
-* Checks password length
-* Validates uppercase letters
-* Validates lowercase letters
-* Validates numeric digits
-* Displays clear validation result
-* Simple and readable logic
+The program then informs the user whether the password is **valid or needs to be strengthened**.
 
 ---
 
 ## Validation Rules
 
-A password is considered **valid** if:
+A password is considered **valid** if it satisfies all the following conditions:
 
-* Length is greater than 8 and less than 15 characters
-* Contains at least one uppercase character
-* Contains at least one lowercase character
-* Contains at least one digit
+* Length must be **greater than 8 and less than 15 characters**
+* Must contain **at least one uppercase letter**
+* Must contain **at least one lowercase letter**
+* Must contain **at least one digit**
 
-If any of these conditions fail, the password is marked as invalid.
+---
+
+## Features
+
+* User-friendly input prompt
+* Real-time password validation
+* Uses built-in string methods
+* Simple and readable logic
+* Beginner-friendly implementation
 
 ---
 
 ## Concepts Used
-
-This project is built using fundamental Python concepts:
 
 ### Data Types
 
@@ -56,54 +49,90 @@ This project is built using fundamental Python concepts:
 
 ### Control Statements
 
-* for loop
-* if / else
+* `for` loop
+* `if` conditions
 
-### String Methods
+### Python Concepts
 
-* isupper()
-* islower()
-* isdigit()
-* len()
+* String traversal
+* Built-in string methods:
 
-### Programming Concepts
-
-* User input handling
-* Conditional logic
-* Boolean flags
-* Character-wise string traversal
-
----
-
-## Sample Execution
-
-Enter Your Password: Hello1234
-Password is valid
-
-Enter Your Password: hello
-Password is invalid! Need to Make More Strong Password
+  * `isupper()`
+  * `islower()`
+  * `isdigit()`
+* Logical operators
+* Input and output handling
 
 ---
 
 ## Project Structure
 
-Password_Validator.py
+```
+password-validator/
+│
+├── PasswordValidator.py   # Main program file
+└── README.md              # Project documentation
+```
 
 ---
 
-## Possible Improvements
+## How to Run the Program
+
+### Requirements
+
+* Python 3.x installed on your system
+
+### Steps
+
+1. Open terminal or command prompt
+2. Navigate to the project directory
+3. Run the program using:
+
+```bash
+python PasswordValidator.py
+```
+
+---
+
+## Sample Output
+
+### Valid Password
+
+```
+Enter Your Password: Strong123
+Password is valid
+```
+
+### Invalid Password
+
+```
+Enter Your Password: weak
+Password is invalid! Need to Make More Strong Password
+```
+
+---
+
+## Edge Cases Handled
+
+* Password too short or too long
+* Missing uppercase letter
+* Missing lowercase letter
+* Missing digit
+
+---
+
+## Future Improvements
 
 * Add special character validation
-* Show exact reason why password is invalid
-* Allow user to retry until valid password is entered
 * Mask password input
-* Convert into a reusable function
+* Show specific error messages for failed conditions
+* Convert into reusable function
 
 ---
 
 ## Author
 
-Meet Tailor
+**Meet Tailor**
 Python Programming Learner
 GitHub: [https://github.com/MeetTailor-Data](https://github.com/MeetTailor-Data)
 
@@ -117,5 +146,5 @@ This project is created for learning and educational purposes.
 
 ## Status
 
-Project Status: Completed
-Last Updated: 2026
+* Project Status: Completed
+* Last Updated:
